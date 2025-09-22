@@ -1,116 +1,96 @@
-<!--
-Portfolio Starter - single-file HTML
-How to use:
-1) Replace NAME, TITLE, ABOUT, and project content below.
-2) Put your images/screenshots/PDFs into an `assets/` folder in the same repo (assets/images/, assets/reports/).
-   - If you host on GitHub, upload files to the repo and reference them as ./assets/.... (see GitHub Pages quickstart).
-   - Keep files <100MB (GitHub blocks files >100MiB; browser uploads limited to ~25MiB). Use Git LFS for bigger files.
-3) To show interactive Tableau visualizations: publish the viz to Tableau Public and embed the iframe URL where indicated.
-   Example iframe src: https://public.tableau.com/views/YOUR_WORKBOOK/YOUR_SHEET?:showVizHome=no&:embed=true
-4) To show interactive Power BI: use "Publish to web" in Power BI Service (public embed) and replace the iframe src with the embed URL.
-   Warning: Publish-to-web creates a public link — don't use with private/sensitive data.
-5) Deploy options:
-   - GitHub Pages: create a repo and push these files; then enable Pages (see Quickstart on GitHub Pages).
-   - Netlify / Vercel: drag & drop the site folder or connect repo for continuous deploy.
-6) Contact form: this template uses Formspree. Sign up and replace the action URL with your form endpoint.
-7) Customize colors, fonts, and sections as needed.
--->
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Suvapnil Dubey </title>
+  <title>Suvapnil Dubey - Data Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root{--accent:#2b8cff}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
-    header{background:#0b1220;color:white;padding:5rem 0}
-    .hero-name{font-size:2.25rem;font-weight:700}
-    .skill-badge{background:#f1f5f9;border-radius:.5rem;padding:.25rem .5rem;margin:.15rem;display:inline-block}
-    .project-thumb{height:200px;object-fit:cover;width:100%;border-radius:.35rem}
-    .section-title{border-left:4px solid var(--accent);padding-left:.75rem}
-    footer{padding:2rem 0;background:#f8fafc}
-    .pdf-thumb{height:140px;background:#0f1724;color:#fff;display:flex;align-items:center;justify-content:center;border-radius:.35rem}
+    :root { --accent: #2b8cff; }
+    body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+    header { background: #0b1220; color: white; padding: 5rem 0; }
+    .hero-name { font-size: 2.25rem; font-weight: 700; }
+    .skill-badge { background: #f1f5f9; border-radius: .5rem; padding: .25rem .5rem; margin: .15rem; display: inline-block; }
+    .project-thumb { height: 200px; object-fit: cover; width: 100%; border-radius: .35rem; }
+    .section-title { border-left: 4px solid var(--accent); padding-left: .75rem; margin-bottom: 1rem; }
+    footer { padding: 2rem 0; background: #f8fafc; }
+    .pdf-thumb { height: 140px; background: #0f1724; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: .35rem; }
   </style>
 </head>
 <body>
 
-<!-- Header / Hero -->
+<!-- Header -->
 <header class="text-center">
   <div class="container">
-    <img src="assets/images/profile.jpg" alt="Your Photo" class="rounded-circle mb-3" style="width:110px;height:110px;object-fit:cover;">
+    <img src="assets/images/profile.jpg" alt="Profile Photo" class="rounded-circle mb-3" style="width:110px;height:110px;object-fit:cover;">
     <div class="hero-name">Suvapnil Dubey</div>
-    <div class="lead">Data Scientist • Data Analyst • Business Analyst • Dashboarding  (Power BI, Tableau) </div>
+    <div class="lead">Data Analyst • Data Scientist • Data Engineer</div>
     <div class="mt-3">
-      <a href="#projects" class="btn btn-light btn-sm me-2">See projects</a>
-      <a href="assets/reports/Resume.pdf" class="btn btn-outline-light btn-sm">Download Resume (PDF)</a>
+      <a href="#projects" class="btn btn-light btn-sm me-2">See Projects</a>
+      <a href="assets/reports/Resume.pdf" class="btn btn-outline-light btn-sm" target="_blank">Download Resume (PDF)</a>
     </div>
   </div>
 </header>
 
+<!-- Main -->
 <main class="container my-5">
   <div class="row">
+    <!-- About -->
     <div class="col-md-8">
       <h2 class="section-title">About</h2>
-      <section id="about" class="about">
+      <section id="about">
         <p>
           Hi, I’m <strong>Suvapnil Dubey</strong>, an analytics and technology professional with a strong background in
-          <strong>Data Analysis, Data Science, and Data Engineering</strong>. Over the last 5+ years, I’ve worked across
-          industries including <em>Retail, Education, Healthcare, and Financial Services</em>, where I transformed raw data
-          into actionable insights, built scalable data solutions, and developed predictive models to drive smarter business
-          decisions.
+          <strong>Data Analysis, Data Science, and Data Engineering</strong>. I have 5+ years of experience across
+          <em>Retail, Education, Healthcare, and Financial Services</em>, where I transformed raw data into actionable insights,
+          built scalable pipelines, and developed predictive models to drive smarter decisions.
         </p>
         <p>
-          My skill set spans the full data lifecycle— from <strong>SQL, Python, and ETL pipelines</strong> for data
-          engineering, to <strong>statistical analysis, machine learning, and visualization</strong> with
-          <strong>Power BI, Tableau, and Python libraries</strong>. I enjoy solving complex problems, designing efficient data
-          workflows, and telling compelling stories with data that influence strategy and outcomes.
+          My expertise covers the full data lifecycle — from <strong>SQL, Python, and ETL pipelines</strong> for data
+          engineering, to <strong>statistical analysis, machine learning, and visualization</strong> with Power BI,
+          Tableau, and Python libraries. I enjoy solving complex problems, optimizing workflows, and telling impactful
+          stories with data.
         </p>
         <p>
-          I’m seeking opportunities where I can combine my technical expertise, analytical thinking, and business acumen to
-          contribute as a <strong>Data Analyst, Data Scientist, or Data Engineer</strong>. Please explore my projects below to
-          see examples of dashboards, models, and solutions I’ve built.
+          I’m seeking opportunities where I can apply my technical expertise, analytical mindset, and business acumen to
+          deliver measurable results as a <strong>Data Analyst, Data Scientist, or Data Engineer</strong>.
         </p>
       </section>
-    </div>
-  </div>
-</main>
 
-
+      <!-- Skills -->
       <h3 class="mt-4">Skills</h3>
       <div>
         <span class="skill-badge">Power BI</span>
         <span class="skill-badge">Tableau</span>
         <span class="skill-badge">SQL</span>
-        <span class="skill-badge">Python (pandas)</span>
-        <span class="skill-badge">ETL</span>
-        <span class="skill-badge">Data storytelling</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">ETL Development</span>
+        <span class="skill-badge">Machine Learning</span>
+        <span class="skill-badge">Data Storytelling</span>
       </div>
 
+      <!-- Contact -->
       <h3 class="mt-4">Contact</h3>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a> • LinkedIn: <a href="#">linkedin.com/in/your</a> • GitHub: <a href="#">github.com/your</a></p>
-
-      <h3 class="mt-4">Notes</h3>
-      <ul>
-        <li>Prefer to keep some portfolio items private? Upload a PDF report and link to it; use a private link in Google Drive when sharing privately.</li>
-        <li>Interactive Tableau visualizations can be embedded from Tableau Public (replace iframe src).</li>
-        <li>Interactive Power BI visualizations require Publish to web (public) or Power BI embedded hosting for private sharing — use caution with data privacy.</li>
-      </ul>
+      <p>
+        Email: <a href="mailto:suvapnildubey@gmail.com">suvapnildubey@gmail.com</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/suvapnildubey" target="_blank">linkedin.com/in/suvapnildubey</a><br>
+        GitHub: <a href="https://github.com/suvapnildubey" target="_blank">github.com/suvapnildubey</a>
+      </p>
     </div>
 
+    <!-- Resume Snapshot -->
     <div class="col-md-4">
       <h2 class="section-title">Resume Snapshot</h2>
       <div class="card p-3">
-        <h5>Top bullets</h5>
+        <h5>Highlights</h5>
         <ul>
-          <li>4+ years — Business Intelligence & Analytics</li>
-          <li>Saved managers ~4–7 hours/week via dashboarding</li>
-          <li>Built and automated 10+ Power BI dashboards</li>
+          <li>5+ years — Business Intelligence & Analytics</li>
+          <li>Automated dashboards saving 4–7 hours/week</li>
+          <li>Built 10+ interactive dashboards (Power BI, Tableau)</li>
+          <li>Hands-on with SQL, Python, ETL pipelines</li>
         </ul>
-        <a class="btn btn-primary btn-sm" href="assets/reports/Resume.pdf" download>Download full resume</a>
+        <a class="btn btn-primary btn-sm" href="assets/reports/Resume.pdf" target="_blank">Download Full Resume</a>
       </div>
     </div>
   </div>
@@ -118,61 +98,50 @@ How to use:
   <!-- Projects -->
   <section id="projects" class="mt-5">
     <h2 class="section-title">Projects</h2>
-    <p class="text-muted">Click a project to view details, screenshots and downloadable reports (PDFs).</p>
+    <p class="text-muted">Selected projects showcasing dashboards, models, and analysis work.</p>
 
     <div class="row row-cols-1 row-cols-md-3 g-3">
       <!-- Project 1 -->
       <div class="col">
         <div class="card h-100">
-          <img src="assets/images/project1-thumb.png" class="project-thumb" alt="Project 1 screenshot">
+          <img src="assets/images/project1-thumb.png" class="project-thumb" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Campaign Performance Dashboard</h5>
-            <p class="card-text">Built end-to-end pipeline and Power BI dashboard for marketing campaigns; automated refresh and reduced reporting time by 7 hours/week.</p>
-            <div class="d-flex gap-2">
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProject1">View</button>
-              <a href="assets/reports/Campaigns_Report.pdf" class="btn btn-sm btn-outline-success" download>Download PDF</a>
-              <a href="#" class="btn btn-sm btn-outline-secondary">View Code</a>
-            </div>
+            <p class="card-text">Automated Power BI dashboard with ETL pipeline reducing reporting effort by 7 hours/week.</p>
+            <a href="assets/reports/Campaigns_Report.pdf" class="btn btn-sm btn-outline-success" target="_blank">Download Report</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 (Tableau Public embed example) -->
+      <!-- Project 2 -->
       <div class="col">
         <div class="card h-100">
-          <div class="pdf-thumb">Tableau viz</div>
+          <div class="pdf-thumb">Tableau Viz</div>
           <div class="card-body">
             <h5 class="card-title">Admissions Trend (Tableau)</h5>
-            <p class="card-text">Interactive exploration of historical applications and admit rates. Published to Tableau Public and embedded on the page.</p>
-            <div class="d-flex gap-2">
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalTableau">Open</button>
-              <a href="https://public.tableau.com/" target="_blank" class="btn btn-sm btn-outline-secondary">View on Tableau Public</a>
-            </div>
+            <p class="card-text">Interactive visualization of historical applications and admit rates.</p>
+            <a href="https://public.tableau.com/" target="_blank" class="btn btn-sm btn-outline-primary">View on Tableau Public</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 (Power BI embed placeholder) -->
+      <!-- Project 3 -->
       <div class="col">
         <div class="card h-100">
-          <img src="assets/images/project3-thumb.png" class="project-thumb" alt="Project 3 screenshot">
+          <img src="assets/images/project3-thumb.png" class="project-thumb" alt="Project 3">
           <div class="card-body">
             <h5 class="card-title">NPS & CSAT Analysis</h5>
-            <p class="card-text">Exploratory analysis and dashboarding to identify churn drivers and reduce ticket turnaround time.</p>
-            <div class="d-flex gap-2">
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPowerBI">Open</button>
-              <a href="assets/reports/NPS_Analysis.pdf" class="btn btn-sm btn-outline-success" download>Download PDF</a>
-            </div>
+            <p class="card-text">Exploratory analysis and dashboards to identify churn drivers and improve service turnaround.</p>
+            <a href="assets/reports/NPS_Analysis.pdf" class="btn btn-sm btn-outline-success" target="_blank">Download Report</a>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- Contact form -->
+  <!-- Contact Form -->
   <section id="contact" class="mt-5">
-    <h2 class="section-title">Get in touch</h2>
+    <h2 class="section-title">Get in Touch</h2>
     <form action="https://formspree.io/f/your-id" method="POST">
       <div class="row g-2">
         <div class="col-md-6"><input name="name" class="form-control" placeholder="Your name" required></div>
@@ -183,63 +152,14 @@ How to use:
       </div>
     </form>
   </section>
-
 </main>
 
 <!-- Footer -->
 <footer>
   <div class="container text-center">
-    <small>Built with ❤️ • Replace placeholder assets in /assets/ and push to your GitHub repo to deploy via GitHub Pages or Netlify.</small>
+    <small>© 2025 Suvapnil Dubey — Portfolio built with ❤️ using Bootstrap and GitHub Pages</small>
   </div>
 </footer>
-
-<!-- Modals -->
-<!-- Project 1 modal -->
-<div class="modal fade" id="modalProject1" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Campaign Performance Dashboard</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <img src="assets/images/project1-full.png" alt="Full screenshot" style="width:100%;height:auto;">
-        <h6 class="mt-3">Summary</h6>
-        <p>Problem: Missing consolidated view for campaign performance across channels. Approach: Built ETL pipeline, cleaned & modelled data in SQL, built Power BI dashboard with automated refresh. Impact: Saved 7 hours weekly for PMs and improved budget allocation precision.</p>
-        <a href="assets/reports/Campaigns_Report.pdf" class="btn btn-sm btn-success" download>Download report (PDF)</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Tableau modal -->
-<div class="modal fade" id="modalTableau" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Admissions Trend (Tableau)</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <!-- Replace the src below with your Tableau Public embed link -->
-        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-          <iframe src="https://public.tableau.com/views/YOUR_WORKBOOK/YOUR_SHEET?:showVizHome=no&:embed=true" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen></iframe>
-        </div>
-        <p class="mt-3">Tip: Publish to Tableau Public, then use the share/embed code to replace the iframe src above.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Power BI modal -->
-<div class="modal fade" id="modalPowerBI" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">NPS & CSAT Dashboard (Power BI)</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <!-- Replace the src below with your Power BI "Publish to web" embed URL (public) -->
-        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-          <iframe width="100%" height="600" src="https://app.powerbi.com/view?r=YOUR_EMBED_CODE" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
-        <p class="mt-3">Warning: "Publish to web" makes the report publicly accessible. For private sharing, consider exporting PDFs or using Power BI Premium/Embedded.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
