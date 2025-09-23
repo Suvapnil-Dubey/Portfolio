@@ -652,6 +652,20 @@
   .project-card .card-text {
     font-size: 0.95rem;
   }
+
+  .project-thumb {
+  width: 100%;              /* Full width of the card */
+  height: 200px;            /* Fixed height for uniformity */
+  object-fit: cover;        /* Ensures image fills container without distortion */
+  border-radius: 8px;       /* Slightly rounded corners for style */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+
+  .project-thumb:hover {
+  transform: scale(1.05);   /* Slight zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Highlight effect */
+  }
 </style>
 
       <!-- Project 2 -->
