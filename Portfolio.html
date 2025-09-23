@@ -619,17 +619,40 @@
   <div class="row row-cols-1 row-cols-md-3 g-3">
      <!-- Project 1 -->
 <div class="col">
-  <div class="card h-100 shadow-sm" style="border-radius:12px; transition: transform 0.3s, box-shadow 0.3s;">
+  <div class="card h-100 shadow-sm project-card" style="border-radius:12px; overflow:hidden; transition: transform 0.3s, box-shadow 0.3s;">
     <img src="assets/images/Tesla_Case_Study.png" class="card-img-top project-thumb" alt="Tesla Case Study">
     <div class="card-body">
       <h5 class="card-title" style="color:#2b8cff;">Tesla Case Study (2023-24)</h5>
       <p class="card-text" style="line-height:1.6;">
         Analyzed Tesla’s sales, market share, stock price, profit, and deliveries over 2023-24 to uncover key trends and insights. Created visualizations to highlight performance patterns and strategic opportunities.
       </p>
-      <a href="assets/reports/Tesla Case Study 2023-24.pdf" class="btn btn-sm btn-outline-success" target="_blank">Download Report</a>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="assets/reports/Tesla Case Study 2023-24.pdf" class="btn btn-sm btn-outline-success" target="_blank">Download Case Study</a>
+        <a href="assets/reports/Tesla final tableau.twbx" class="btn btn-sm btn-outline-primary" target="_blank">Download Tableau Report</a>
+      </div>
     </div>
   </div>
 </div>
+
+<style>
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+
+  .project-card img.project-thumb {
+    object-fit: cover;
+    height: 180px;
+  }
+
+  .project-card .card-title {
+    font-weight: 600;
+  }
+
+  .project-card .card-text {
+    font-size: 0.95rem;
+  }
+</style>
 
       <!-- Project 2 -->
       <div class="col">
