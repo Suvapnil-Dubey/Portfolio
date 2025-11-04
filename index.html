@@ -67,7 +67,14 @@
         Download Resume
       </a>
     </div>
-  </div>
+
+    <nav>
+  <ul class="nav-list">
+    <li><a href="analyst.html" class="nav-link">Data Analyst</a></li>
+    <li><a href="scientist.html" class="nav-link">Data Scientist</a></li>
+    <li><a href="engineer.html" class="nav-link">Data Engineer</a></li>
+  </ul>
+</nav>
 </header>
 
 
@@ -87,6 +94,46 @@
   }
 </style>
 
+
+<style>
+/* Nav Container */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* centers the nav items */
+  gap: 15px;
+  background-color: #0b1220;
+  border-radius: 12px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 20px 0; /* optional spacing from top/bottom */
+}
+
+/* Links */
+.nav-link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: #fbfcfd;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Active tab */
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,123,255,0.3);
+}
+</style>
 
 <section class="container my-5 py-4" style="background-color:#f8f9fa; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.08);">
   <div class="row">
@@ -124,6 +171,7 @@
   </div>
 </section>
 
+
 <style>
   /* Fade-in animation */
   @keyframes fadeIn {
@@ -158,7 +206,6 @@
 </style>
 
 </main>
-
 
 <!-- Skills, Tools & Certifications (Interactive) -->
 <section id="skills-tools" class="py-5" style="background-color:#f8f9fa;">

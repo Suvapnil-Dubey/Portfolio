@@ -1,38 +1,922 @@
 <!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Data Analyst</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Suvapnil Dubey — Data Analyst, Data Scientist, and Business Intelligence Professional. Skilled in Python, SQL, Power BI, Tableau, and data storytelling.">
+  <title>Suvapnil Dubey - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="google-site-verification" content="4qhZ_Zs_YJzWZze1Z0nWvRfzwkfFMZbUYKKc5SUC_Bc" />
+  <meta name="description" content="Portfolio of Suvapnil Dubey - Data Analyst, Data Scientist, and Data Engineer. Showcasing projects, skills, and experience.">
+  <meta name="keywords" content="Suvapnil Dubey, Data Analyst, Data Scientist, Data Engineer, Portfolio, Python, SQL, Power BI, Tableau">
+  <meta name="author" content="Suvapnil Dubey">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E2HW44LXHC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E2HW44LXHC');
+</script>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 24px auto; padding: 0 16px; }
-    nav ul { list-style:none; padding:0; display:flex; gap:10px; }
-    nav a { text-decoration:none; padding:6px 10px; border-radius:6px; }
-    .project { border:1px solid #eee; padding:14px; margin:12px 0; border-radius:8px; }
+    :root { --accent: #2b8cff; }
+    body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+    header { background: #0b1220; color: rgb(247, 248, 249); padding: 5rem 0; }
+    .hero-name { font-size: 2.25rem; font-weight: 700; }
+    .skill-badge { background: #f1f5f9; border-radius: .5rem; padding: .25rem .5rem; margin: .15rem; display: inline-block; }
+    .project-thumb { height: 200px; object-fit: cover; width: 100%; border-radius: .35rem; }
+    .section-title { border-left: 4px solid var(--accent); padding-left: .75rem; margin-bottom: 1rem; }
+    footer { padding: 2rem 0; background: #0b1220; color: #d1d5db; }
+    .pdf-thumb { height: 140px; background: #0b1220; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: .35rem; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Data Analyst</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="analyst.html">Data Analyst</a></li>
-        <li><a href="scientist.html">Data Scientist</a></li>
-        <li><a href="engineer.html">Data Engineer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <div class="project">
-      <h2>Project Title</h2>
-      <p>Short description of the project.</p>
-      <p><strong>Tech:</strong> Tools/Technologies used</p>
-      <a href="https://github.com/yourusername/project-repo" target="_blank">View Project</a>
+<!-- Header -->
+<header class="text-center py-5" style="background:#0b1220; color:#fff;">
+  <div class="container">
+    <!-- Profile Image -->
+    <!-- Name & Role -->
+    <div class="hero-name mb-2" style="font-size:2.5rem; font-weight:700;">Suvapnil Dubey</div>
+    <div class="lead mb-4" style="font-size:1.2rem; color:#d1d5db;">Data Analyst </div>
+
+    <!-- Contact Info -->
+    <div class="d-flex justify-content-center flex-wrap mb-4">
+      <a href="mailto:suvapnildubey@gmail.com" class="text-light me-4 mb-2 contact-link" style="text-decoration:none;">
+        <i class="fas fa-envelope me-2"></i> suvapnildubey@gmail.com
+      </a>
+      <a href="tel:+14127573660" class="text-light me-4 mb-2 contact-link" style="text-decoration:none;">
+        <i class="fas fa-phone me-2"></i> +1 (412) 757-3660
+      </a>
+      <a href="https://github.com/suvapnildubey" target="_blank" class="text-light mb-2 contact-link" style="text-decoration:none;">
+        <i class="fab fa-github me-2"></i> github.com/suvapnildubey
+      </a>
     </div>
-    <!-- Duplicate the above div for more projects -->
-  </main>
+
+    <!-- Action Buttons -->
+    <div class="d-flex justify-content-center flex-wrap gap-2">
+      <a href="#projects" class="btn btn-light btn-sm px-4 py-2" style="font-weight:600; transition:0.3s;">
+        See Projects
+      </a>
+      <a href="assets/reports/Suvapnil_dubey_resume.pdf" class="btn btn-outline-light btn-sm px-4 py-2" target="_blank" style="font-weight:600; transition:0.3s;">
+        Download Resume
+      </a>
+    </div>
+
+    <nav>
+  <ul class="nav-list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="analyst.html" class="nav-link">Data Analyst</a></li>
+    <li><a href="scientist.html" class="nav-link">Data Scientist</a></li>
+    <li><a href="engineer.html" class="nav-link">Data Engineer</a></li>
+  </ul>
+</nav>
+</header>
+
+
+<!-- Optional: Hover effect CSS -->
+<style>
+  .contact-link:hover {
+    color: #2b8cff !important;
+  }
+  .btn-light:hover {
+    background-color: #2b8cff !important;
+    color: #fff !important;
+  }
+  .btn-outline-light:hover {
+    background-color: #2b8cff !important;
+    border-color: #2b8cff !important;
+    color: #fff !important;
+  }
+</style>
+
+
+<style>
+/* Nav Container */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* centers the nav items */
+  gap: 15px;
+  background-color: #0b1220;
+  border-radius: 12px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 20px 0; /* optional spacing from top/bottom */
+}
+
+/* Links */
+.nav-link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: #fbfcfd;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Active tab */
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,123,255,0.3);
+}
+</style>
+
+<section class="container my-5 py-4" style="background-color:#f8f9fa; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+  <div class="row">
+    <!-- About Me (75%) -->
+    <div class="col-md-9">
+      <h2 class="section-title mb-4" style="border-left: 4px solid #2b8cff; padding-left: 10px;">About Me</h2>
+      <p style="line-height:1.8; font-size:1.05rem; animation: fadeIn 1s ease forwards;">
+        I’m <strong>Suvapnil Dubey</strong>, an analytics and technology professional with <strong>5+ years</strong> of experience delivering data-driven solutions across <span style="color:#2b8cff;">Retail, Education, Healthcare, and Financial Services</span>. I specialize in transforming complex datasets into actionable insights, building scalable <strong>ETL pipelines</strong>, and developing predictive models that drive measurable business outcomes.
+      </p>
+      <p style="line-height:1.8; font-size:1.05rem; animation: fadeIn 1.2s ease forwards;">
+        My expertise spans the full data lifecycle—<strong>SQL, Python, and PySpark</strong> for data engineering; <strong>Anomaly detection, A/B testing, forecasting, and time series modeling</strong> for advanced analytics; and visualization tools like <strong>Power BI and Tableau</strong> for clear, impactful storytelling. I’ve also worked with <strong>natural language processing (NLP), optimization techniques, and Monte Carlo simulations</strong> to solve complex business problems.
+      </p>
+      <p style="line-height:1.8; font-size:1.05rem; animation: fadeIn 1.4s ease forwards;">
+        Beyond technical execution, I bring a strong business perspective: aligning data strategies with organizational goals, improving customer satisfaction, and supporting revenue growth through analytics. I thrive at the intersection of data, technology, and strategy—where insights translate directly into results.
+      </p>
+      <p style="line-height:1.8; font-size:1.05rem; animation: fadeIn 1.6s ease forwards;">
+        I’m seeking opportunities where I can leverage this blend of technical expertise and business acumen to deliver value as a <strong>Data Analyst, Data Scientist, or Data Engineer</strong>.
+      </p>
+    </div>
+
+    <!-- Resume Snapshot (25%) -->
+    <div class="col-md-3">
+      <h2 class="section-title mb-3" style="border-left: 4px solid #2b8cff; padding-left: 10px;">Resume Snapshot</h2>
+      <div class="card p-4 mb-5 shadow-sm" style="border-radius:12px; background-color:#ffffff; transition: transform 0.3s, box-shadow 0.3s;">
+        <h5 class="mb-3" style="color:#2b8cff;">Highlights</h5>
+        <ul style="line-height:1.6; font-size:1rem; padding-left:1rem;">
+          <li><strong>Revenue Growth:</strong> Drove <strong>52% YoY revenue growth</strong> by optimizing multi-channel campaigns and data strategies.</li>
+          <li><strong>Efficiency:</strong> Automated reporting pipelines, saving <strong>4–7 hours per week</strong> across teams.</li>
+          <li><strong>Dashboards:</strong> Developed <strong>10+ interactive dashboards</strong> in Power BI & Tableau to drive data-driven decisions.</li>
+          <li><strong>Customer Satisfaction:</strong> Improved CSAT by <strong>25%</strong> through advanced reporting, root-cause analysis, and actionable insights.</li>
+        </ul>
+        <a class="btn btn-primary btn-sm mt-3" href="assets/reports/Suvapnil_dubey_resume.pdf" target="_blank" style="transition: background-color 0.3s;">Download Full Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {opacity:0; transform: translateY(15px);}
+    100% {opacity:1; transform: translateY(0);}
+  }
+
+  /* Highlight keywords */
+  section strong {
+    color: #2b8cff;
+  }
+
+  section span {
+    font-weight: 600;
+  }
+
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+
+  .btn-primary:hover {
+    background-color: #1a6fcc;
+  }
+
+  /* Section title style */
+  .section-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+</style>
+
+</main>
+
+<!-- Skills, Tools & Certifications (Interactive) -->
+<section id="skills-tools" class="py-5" style="background-color:#f8f9fa;">
+  <div class="container">
+    <h2 class="section-title text-center mb-3">Skills, Tools & Certifications</h2>
+    <p class="text-muted text-center mb-4">Filter to explore my technical strengths. Click certifications for details.</p>
+
+    <!-- Filter controls -->
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+      <button class="btn btn-outline-secondary btn-sm filter-btn active" data-filter="all">All</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="programming">Programming & Analytics</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="cloud">Cloud & Big Data</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="ml">ML & Stats</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="etl">ETL & Data Eng</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="bi">BI & Viz</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="tools">Tools & Platforms</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="database">Database</button>
+      <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="cert">Certifications</button>
+      <input id="skill-search" class="form-control form-control-sm ms-3" style="max-width:240px;" placeholder="Search tool or skill..." />
+    </div>
+
+    <!-- Badges grid -->
+    <div id="badges" class="row g-3">
+      <!-- badge template:
+        data-cats: comma-separated category keys (programming, cloud, ml, etl, bi, tools, cert)
+        data-name: full display name (used by search)
+        <img src="assets/logos/<name>.svg"> if available (see instructions).
+      -->
+
+      <!-- Programming & Analytics -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="programming" data-name="Python">
+          <img src="assets/logos/python.svg" alt="Python logo" onerror="this.style.display='none'">
+          <div class="skill-label">Python</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="programming" data-name="Pandas">
+          <img src="assets/logos/pandas.svg" alt="Pandas logo" onerror="this.style.display='none'">
+
+          <div class="skill-label">Pandas</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="programming" data-name="SQL">
+          <img src="assets/logos/sql.svg" alt="SQL logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">SQL</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="programming" data-name="R">
+          <img src="assets/logos/r.svg" alt="R logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">R</div>
+        </div>
+      </div>
+
+      <!-- ML & Stats -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="ml" data-name="scikit-learn">
+          <img src="assets/logos/sklearn.svg" alt="scikit-learn logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">scikit-learn</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="ml" data-name="TensorFlow">
+          <img src="assets/logos/tensorflow.svg" alt="TensorFlow logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">TensorFlow</div>
+        </div>
+      </div>
+
+      <!-- Cloud & Big Data -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="AWS">
+          <img src="assets/logos/AWS.svg" alt="AWS logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">AWS</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="GCP BigQuery">
+          <img src="assets/logos/bigquery.svg" alt="BigQuery logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">BigQuery</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Snowflake">
+          <img src="assets/logos/snowflake.svg" alt="Snowflake logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">Snowflake</div>
+        </div>
+      </div>
+
+      <!-- BI & Visualization -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="bi" data-name="Power BI">
+          <img src="assets/logos/powerbi.svg" alt="Power BI logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">Power BI</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="bi" data-name="Tableau">
+          <img src="assets/logos/tableau.svg" alt="Tableau logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">Tableau</div>
+        </div>
+      </div>
+
+      <!-- ETL / Data Engineering -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="etl" data-name="Airflow">
+          <img src="assets/logos/airflow.svg" alt="Airflow logo" onerror="this.style.display='none'">
+
+          <div class="skill-label">Airflow</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="etl" data-name="dbt">
+          <img src="assets/logos/dbt.svg" alt="dbt logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">dbt</div>
+        </div>
+      </div>
+
+      <!-- Tools & Platforms -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="tools" data-name="GitHub">
+          <img src="assets/logos/github.svg" alt="GitHub logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">GitHub</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="tools" data-name="Docker">
+          <img src="assets/logos/docker.svg" alt="Docker logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">Docker</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="database" data-name="Access">
+          <img src="assets/logos/access.svg" alt="Access Logo" onerror="this.style.display='none'">
+          <div class="skill-label">Access</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="etl" data-name="Talend">
+          <img src="assets/logos/talend.svg" alt="Talend" onerror="this.style.display='none'">
+          <div class="skill-label">Talend</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="etl" data-name="Informatica">
+          <img src="assets/logos/informatica.svg" alt="Informatica" onerror="this.style.display='none'">
+          <div class="skill-label">Informatica</div>
+        </div>
+      </div>      
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="bi" data-name="Looker">
+          <img src="assets/logos/looker.svg" alt="Looker" onerror="this.style.display='none'">
+          <div class="skill-label">Looker</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="bi" data-name="Qlik Sense">
+          <img src="assets/logos/qlik.svg" alt="Qlik Sense" onerror="this.style.display='none'">
+          <div class="skill-label">Qlik Sense</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="bi" data-name="Matplotlib">
+          <img src="assets/logos/Matplotlib.svg" alt="Matplotlib" onerror="this.style.display='none'">
+          <div class="skill-label">Matplotlib</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="bi" data-name="Seaborn">
+          <img src="assets/logos/seaborn.svg" alt="Seaborn" onerror="this.style.display='none'">
+          <div class="skill-label">Seaborn</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="tools" data-name="Jupyter Notebook">
+          <img src="assets/logos/Jupyter.svg" alt="Jupyter Notebook" onerror="this.style.display='none'">
+          <div class="skill-label">Jupyter Notebook</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="tools" data-name="Visual Studio Code">
+          <img src="assets/logos/VSCode.svg" alt="Visual Studio Code" onerror="this.style.display='none'">
+          <div class="skill-label">Visual Studio Code</div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Apache Hadoop">
+          <img src="assets/logos/ApacheHadoop.svg" alt="Apache Hadoop" onerror="this.style.display='none'">
+          <div class="skill-label">Apache Hadoop</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="database" data-name="MySQL">
+          <img src="assets/logos/mysql.svg" alt="MySQL" onerror="this.style.display='none'">
+          <div class="skill-label">MySQL</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="database" data-name="PostgreSQL">
+          <img src="assets/logos/postgresql.svg" alt="PostgreSQL" onerror="this.style.display='none'">
+          <div class="skill-label">PostgreSQL</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="etl" data-name="AWS Glue">
+          <img src="assets/logos/Glue.svg" alt="AWS Glue" onerror="this.style.display='none'">
+          <div class="skill-label">AWS Glue</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Databricks">
+          <img src="assets/logos/databricks.svg" alt="Databricks" onerror="this.style.display='none'">
+          <div class="skill-label">Databricks</div>
+        </div>
+      </div>      
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="database" data-name="Apache Cassandra">
+          <img src="assets/logos/ApacheCassandra.svg" alt="Apache Cassandra" onerror="this.style.display='none'">
+          <div class="skill-label">Apache Cassandra</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="bi" data-name="Plotly">
+          <img src="assets/logos/plotly.svg" alt="Plotly" onerror="this.style.display='none'">
+          <div class="skill-label">Plotly</div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="ml" data-name="PyTorch">
+          <img src="assets/logos/pytorch.svg" alt="PyTorch" onerror="this.style.display='none'">
+          <div class="skill-label">PyTorch</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="ml" data-name="XGBoost">
+          <img src="assets/logos/XGBoost.svg" alt="XGBoost" onerror="this.style.display='none'">
+          <div class="skill-label">XGBoost</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="ml" data-name="Statsmodel">
+          <img src="assets/logos/Statsmodel.svg" alt="Statsmodel" onerror="this.style.display='none'">
+          <div class="skill-label">Statsmodel</div>
+        </div>
+      </div>
+
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Apache Hive">
+          <img src="assets/logos/apachehive.svg" alt="Apache Hive" onerror="this.style.display='none'">
+          <div class="skill-label">Apache Hive</div>
+        </div>
+      </div>      
+      
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Apache Kafka">
+          <img src="assets/logos/ApacheKafka.svg" alt="Apache Kafka" onerror="this.style.display='none'">
+          <div class="skill-label">Apache Kafka</div>
+        </div>
+      </div>
+      
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Apache Spark">
+          <img src="assets/logos/ApacheSpark.svg" alt="Apache Spark" onerror="this.style.display='none'">
+          <div class="skill-label">Apache Spark</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="programming" data-name="NumPy">
+          <img src="assets/logos/NumPy.svg" alt="NumPy" onerror="this.style.display='none'">
+          <div class="skill-label">NumPy</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="programming" data-name="SciPy">
+          <img src="assets/logos/scipy.svg" alt="SciPy" onerror="this.style.display='none'">
+          <div class="skill-label">SciPy</div>
+        </div>
+      </div>
+
+            
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Azure">
+          <img src="assets/logos/Azure.svg" alt="Azure" onerror="this.style.display='none'">
+          <div class="skill-label">Azure</div>
+        </div>
+      </div>
+      
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="tools" data-name="Excel">
+          <img src="assets/logos/excel.svg" alt="Excel" onerror="this.style.display='none'">
+          <div class="skill-label">Excel</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="tools" data-name="Jira">
+          <img src="assets/logos/Jira.svg" alt="Jira" onerror="this.style.display='none'">
+          <div class="skill-label">Jira</div>
+        </div>
+      </div>      
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="database" data-name="Microsoft SQL">
+          <img src="assets/logos/microsoftsql.svg" alt="Microsoftsql" onerror="this.style.display='none'">
+          <div class="skill-label">Microsoft SQL</div>
+        </div>
+      </div>
+      
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="database" data-name="Oracle">
+          <img src="assets/logos/Oracle.svg" alt="Oracle" onerror="this.style.display='none'">
+          <div class="skill-label">Oracle</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="database" data-name="MongoDB">
+          <img src="assets/logos/MongoDB.svg" alt="MongoDB" onerror="this.style.display='none'">
+          <div class="skill-label">MongoDB</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="tools" data-name="PyCharm">
+          <img src="assets/logos/PyCharm.svg" alt="PyCharm" onerror="this.style.display='none'">
+          <div class="skill-label">PyCharm</div>
+        </div>
+      </div>
+
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card" data-cats="cloud" data-name="Salesforce">
+          <img src="assets/logos/salesforce.svg" alt="Salesforce" onerror="this.style.display='none'">
+          <div class="skill-label">Salesforce</div>
+        </div>
+      </div>
+
+
+      <!-- Certifications -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="skill-badge-card skill-cert" data-cats="cert" data-name="Microsoft Power BI Data Analyst" data-cert='{"title":"Microsoft Certified – Power BI Data Analyst Associate","issuer":"Microsoft","year":"2024","url":"https://learn.microsoft.com/en-us/users/suvapnildubey-7772/transcript/dzo9ugrq8gg843v"}'>
+          <img src="assets/logos/powerbi.svg" alt="Power BI logo" onerror="this.style.display='none'">
+          
+          <div class="skill-label">Power BI Cert</div>
+        </div>
+      </div>
+
+      <!-- Add more badges as needed following the pattern above -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Certification Modal -->
+<div class="modal fade" id="certModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"><h5 id="certTitle" class="modal-title"></h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body" id="certBody"></div>
+      <div class="modal-footer"><a id="certLink" class="btn btn-primary" target="_blank">View Certificate</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- Styles & JS (place near bottom of page) -->
+<style>
+  .skill-badge-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 10px 10px;
+    height: 120px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:.5rem;
+    transition: transform .25s ease, box-shadow .25s ease, opacity .25s ease;
+    cursor: default;
+    border: 1px solid #eef2f6;
+    position: relative;
+  }
+  .skill-badge-card img { width:40px; height:40px; object-fit:contain; display:block; }
+  .skill-badge-card .fallback { display:block; width:40px; height:40px; border-radius:50%; background:#2b8cff; color:white; display:flex; align-items:center; justify-content:center; font-weight:700; }
+  .skill-label { font-size: .875rem; color:#0f1724; font-weight:600; }
+  .skill-badge-card:hover { transform:translateY(-6px); box-shadow: 0 12px 30px rgba(11,18,32,0.08); }
+  .skill-badge-card.hidden { opacity:0; transform:scale(.98); pointer-events:none; }
+  .skill-badge-card.skill-cert { border-left:4px solid #2b8cff; }
+  /* tooltip look */
+  .skill-badge-card[title] { position:relative; }
+  @media (prefers-reduced-motion: no-preference) {
+    .skill-badge-card { will-change: transform; }
+  }
+</style>
+
+<script>
+  // Filter buttons
+  (function(){
+    const buttons = document.querySelectorAll('.filter-btn');
+    const badges = Array.from(document.querySelectorAll('.skill-badge-card'));
+    const search = document.getElementById('skill-search');
+
+    function setFilter(key) {
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.filter === key));
+      badges.forEach(b => {
+        if (key === 'all') {
+          b.classList.remove('hidden');
+        } else {
+          const cats = (b.dataset.cats || '').split(',').map(x=>x.trim());
+          b.classList.toggle('hidden', !cats.includes(key));
+        }
+      });
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => setFilter(btn.dataset.filter));
+    });
+
+    // default all
+    setFilter('all');
+
+    // Search filter
+    search.addEventListener('input', e => {
+      const q = e.target.value.trim().toLowerCase();
+      badges.forEach(b => {
+        const name = (b.dataset.name || '').toLowerCase();
+        const matches = name.includes(q);
+        b.classList.toggle('hidden', q ? !matches : false);
+      });
+    });
+
+    // Certifications modal
+    const certModalEl = document.getElementById('certModal');
+    const certModal = new bootstrap.Modal(certModalEl);
+    document.querySelectorAll('.skill-badge-card.skill-cert').forEach(card=>{
+      card.addEventListener('click', ()=>{
+        const data = card.dataset.cert ? JSON.parse(card.dataset.cert) : null;
+        if (!data) return;
+        document.getElementById('certTitle').innerText = data.title || data.name || 'Certificate';
+        document.getElementById('certBody').innerHTML = `<p><strong>Issuer:</strong> ${data.issuer || '—'}</p><p><strong>Year:</strong> ${data.year || '—'}</p>`;
+        document.getElementById('certLink').href = data.url || '#';
+        certModal.show();
+      });
+    });
+  })();
+</script>
+
+
+<!-- Projects Section -->
+<section id="projects" class="container my-5">
+  <h2 class="section-title mb-3">Projects</h2>
+  <p class="text-muted mb-4">Selected projects showcasing dashboards, models, and analysis work.</p>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Project 1: Tesla Case Study -->
+    <div class="col">
+      <div class="card h-100 shadow-sm project-card">
+        <img src="assets/images/Tesla_Case_Study.png" alt= "Tesla Case Study" class="project-thumb" alt="Tesla Case Study">
+        <div class="card-body">
+          <h5 class="card-title">Tesla Case Study (2023-24)</h5>
+          <p class="card-text">
+            Analyzed Tesla’s sales, market share, stock price, profit, and deliveries over 2023-24 to uncover key trends and insights. Created visualizations to highlight performance patterns and strategic opportunities.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="assets/reports/Tesla Case Study 2023-24.pdf" class="btn btn-sm btn-outline-success" target="_blank">Download Case Study</a>
+            <a href="assets/reports/Tesla final tableau.twbx" class="btn btn-sm btn-outline-primary" target="_blank">Download Tableau Report</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Port Insights -->
+    <div class="col">
+      <div class="card h-100 shadow-sm project-card">
+        <img src="assets/images/output.png" alt= "US Trade" class="project-thumb" alt="Port Insights Tableau">
+        <div class="card-body">
+          <h5 class="card-title">Port Insights: Trade Activity (USA)</h5>
+          <p class="card-text">
+            Explored the US trade network through sea, land, and air routes. Analyzed trade flow patterns, port connectivity, and dependencies to uncover dynamics shaping the nation’s commerce landscape.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="assets/reports/Final Project report.pdf" class="btn btn-sm btn-outline-success" target="_blank">Download Case Study</a>
+            <a href="assets/reports/Final project code.ipynb" class="btn btn-sm btn-outline-primary" target="_blank">Code File</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: NPS & CSAT Analysis -->
+   <div class="col">
+      <div class="card h-100 shadow-sm project-card">
+        <img src="assets/images/CSAT.png" class="project-thumb" alt="NPS & CSAT Analysis">
+        <div class="card-body">
+          <h5 class="card-title">NPS & CSAT Analysis</h5>
+          <p class="card-text">
+            Conducted exploratory analysis and dashboards to identify churn drivers, optimize customer support processes, and improve service turnaround times.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="assets/reports/NPS_Analysis.pdf" class="btn btn-sm btn-outline-success" target="_blank">Download Report</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section> 
+
+<!-- CSS -->
+<style>
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .card-title {
+  font-weight: 600;
+  color: #2b8cff;
+}
+
+.project-card .card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-card .btn {
+  min-width: 130px;
+}
+</style>
+
+<section id="contact" class="container my-5 py-5" style="background-color:#f8f9fa; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.08); text-align:center;">
+  <h2 class="section-title mb-4" style="border-left: 4px solid #2b8cff; padding-left: 10px;">Get in Touch</h2>
+  <p style="font-size:1.05rem; line-height:1.6; color:#555;">
+    I’m always open to discussing new projects, opportunities, or collaborations. Feel free to reach out!
+  </p>
+  <a href="mailto:suvapnildubey@gmail.com" class="btn btn-primary btn-lg contact-btn mt-3">
+    <i class="fas fa-envelope me-2"></i> Contact Me
+  </a>
+</section>
+
+<style>
+  /* Button hover effect */
+  .contact-btn {
+    background-color: #2b8cff;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(43, 140, 255, 0.4);
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* Optional: Icon styling */
+  .contact-btn i {
+    vertical-align: middle;
+  }
+</style>
+
+
+<!-- Footer -->
+<footer class="py-4 text-center"  style="background:#0b1220;">
+  <small>© 2025 Suvapnil Dubey — Portfolio built with ❤️ using Bootstrap and GitHub Pages</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Updated skills filter + reorder script -->
+<script>
+(function(){
+  const parent = document.getElementById('badges');
+  const search = document.getElementById('skill-search');
+  const buttons = document.querySelectorAll('.filter-btn');
+
+  // Build item list (preserve original order)
+  const items = Array.from(parent.querySelectorAll('.skill-badge-card')).map(card => {
+    const col = card.closest('[class*="col-"]');
+    return {
+      card,
+      col,
+      name: (card.dataset.name || '').toLowerCase(),
+      cats: (card.dataset.cats || '').split(',').map(s => s.trim()),
+    };
+  });
+
+  let activeFilter = 'all';
+
+  function renderOrderAndVisibility() {
+    const q = (search.value || '').trim().toLowerCase();
+
+    const matching = [];
+    const nonmatching = [];
+    items.forEach(item => {
+      const matchFilter = (activeFilter === 'all') || item.cats.includes(activeFilter);
+      const matchSearch = q === '' || item.name.indexOf(q) !== -1;
+      if (matchFilter && matchSearch) {
+        matching.push(item);
+      } else {
+        nonmatching.push(item);
+      }
+    });
+
+    // re-append columns: matching first (preserve order), then non-matching
+    while (parent.firstChild) parent.removeChild(parent.firstChild);
+    matching.forEach(it => {
+      it.card.classList.remove('hidden');
+      parent.appendChild(it.col);
+    });
+    nonmatching.forEach(it => {
+      it.card.classList.add('hidden');
+      parent.appendChild(it.col);
+    });
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.toggle('active', b === btn));
+      activeFilter = btn.dataset.filter;
+      renderOrderAndVisibility();
+    });
+  });
+
+  search.addEventListener('input', () => {
+    renderOrderAndVisibility();
+  });
+
+  // initialize
+  renderOrderAndVisibility();
+
+  // Certification modal handling
+  const certModalEl = document.getElementById('certModal');
+  if (certModalEl) {
+    const certModal = new bootstrap.Modal(certModalEl);
+    document.querySelectorAll('.skill-badge-card.skill-cert').forEach(card=>{
+      card.addEventListener('click', ()=>{
+        const data = card.dataset.cert ? JSON.parse(card.dataset.cert) : null;
+        if (!data) return;
+        document.getElementById('certTitle').innerText = data.title || data.name || 'Certificate';
+        document.getElementById('certBody').innerHTML = `<p><strong>Issuer:</strong> ${data.issuer || '—'}</p><p><strong>Year:</strong> ${data.year || '—'}</p>`;
+        document.getElementById('certLink').href = data.url || '#';
+        certModal.show();
+      });
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
